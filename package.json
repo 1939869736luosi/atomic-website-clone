@@ -1,0 +1,41 @@
+{
+  "name": "atomic-website-clone",
+  "version": "0.1.0",
+  "description": "High-fidelity local-only website cloning workflow and browser QA scripts for agents.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "awc-discover": "scripts/discover-interactions.cjs",
+    "awc-capture": "scripts/capture-motion.cjs",
+    "awc-compare-motion": "scripts/compare-motion.cjs",
+    "awc-compare-video": "scripts/compare-video-quality.cjs",
+    "awc-check-state": "scripts/check-state-inventory.cjs",
+    "awc-scan-assets": "scripts/scan-local-assets.cjs",
+    "awc-review-pack": "scripts/review-pack.cjs"
+  },
+  "scripts": {
+    "check": "node --check scripts/*.cjs",
+    "list": "node -e \"console.log(Object.keys(require('./package.json').bin).join('\\n'))\""
+  },
+  "keywords": [
+    "agent-skill",
+    "website-clone",
+    "visual-regression",
+    "playwright",
+    "cdp",
+    "motion-testing"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.54.0"
+  },
+  "files": [
+    "SKILL.md",
+    "agents/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ]
+}

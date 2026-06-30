@@ -1,0 +1,14 @@
+node_modules/
+playwright-report/
+test-results/
+.DS_Store
+.env
+.env.*
+*.log
+output/
+projects/
+captures/
+dist/
+tmp/
+*.zip
+*.tar.gz
